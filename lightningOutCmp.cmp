@@ -1,0 +1,32 @@
+<aura:component description="lightningOutCmp" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+
+    <lightning:card title="Lightning Out Products" iconName="standard:product">
+        <p class="slds-p-horizontal_small">
+            <lightning:listView aura:id="listViewProducts"
+                                objectApiName="Product2"
+                                listName="All"
+                                rows="5"
+                                showActionBar="true"
+                                enableInlineEdit="false"
+                                showRowLevelActions="false" />
+        </p>
+    </lightning:card>
+    <div>
+    
+    <img src="{!$Resource.StaticResourceNameTest}"/>
+        
+        </div>
+    <lightning:card title="Lightning Out Accounts" iconName="standard:account">
+        <p class="slds-p-horizontal_small">
+            <lightning:listView aura:id="listViewAccounts"
+                                objectApiName="Account"
+                                listName="All"
+                                rows="5"
+                                showActionBar="true"
+                                enableInlineEdit="false"
+                                showRowLevelActions="false" />
+        </p>
+    </lightning:card>
+
+</aura:component>
